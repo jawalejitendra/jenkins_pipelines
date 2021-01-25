@@ -11,9 +11,7 @@ node {
             echo 'this is deploying the application'
         }
         
-        post ('Clean Workspace') {
-                always {
-                        cleanWs()
-                }
+        stage ('Clean Workspace') {    
+            cleanWs()
         }
 }
