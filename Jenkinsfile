@@ -10,4 +10,10 @@ node {
         stage('Deploy') {
             echo 'this is deploying the application'
         }
+        
+        post ('Clean Workspace') {
+                always {
+                        cleanWs()
+                }
+        }
 }
