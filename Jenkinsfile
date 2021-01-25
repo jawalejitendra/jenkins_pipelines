@@ -8,6 +8,6 @@ node {
         }
 
         stage('Deploy') {
-            sh('echo this is deploying the application')
+            echo 'this is deploying the application'
         }
 }
