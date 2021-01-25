@@ -1,7 +1,5 @@
 node {
         stage('Verify') {
-            steps {
-                echo 'hi, this is working'
-            }
+            sh('echo this is working')
         }
 }
